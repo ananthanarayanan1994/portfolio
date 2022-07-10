@@ -9,7 +9,7 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <>
-      <Container fluid className="d-flex">
+      <Container fluid>
         <Navbar
           collapseOnSelect
           className="w-100"
@@ -22,26 +22,27 @@ const Header = () => {
               <span className={styles.navLinks}>PORTFOLIO</span>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <div className="ms-auto">
-            <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="ms-auto"
+          />
+          <Navbar.Collapse id="responsive-navbar-nav" className="w-100 justify-content-end ms-auto">
+            <Nav>
+              <Link href="/about">
+                <span className={styles.navLinks}>About</span>
+              </Link>
               <Nav>
-                <Link href="/about">
-                  <span className={styles.navLinks}>About</span>
+                <Link href="/experience">
+                  <span className={styles.navLinks}>Experience</span>
                 </Link>
-                <Nav>
-                  <Link href="/experience">
-                    <span className={styles.navLinks}>Experience</span>
-                  </Link>
-                </Nav>
-                <Nav>
-                  <Link href="/projects">
-                    <span className={styles.navLinks}>Projects</span>
-                  </Link>
-                </Nav>
               </Nav>
-            </Navbar.Collapse>
-          </div>
+              <Nav>
+                <Link href="/projects">
+                  <span className={styles.navLinks}>Projects</span>
+                </Link>
+              </Nav>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </Container>
     </>
