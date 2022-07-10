@@ -29,9 +29,16 @@ const Header = () => {
                 <Link href="/about">
                   <span className={styles.navLinks}>About</span>
                 </Link>
-                <Nav.Link href="#pricing">Skills</Nav.Link>
-                <Nav.Link href="#pricing">Resume</Nav.Link>
-                <Nav.Link href="#pricing">Contact</Nav.Link>
+                <Nav>
+                  <Link href="/experience">
+                    <span className={styles.navLinks}>Experience</span>
+                  </Link>
+                </Nav>
+                <Nav>
+                  <Link href="/projects">
+                    <span className={styles.navLinks}>Projects</span>
+                  </Link>
+                </Nav>
               </Nav>
             </Navbar.Collapse>
           </div>

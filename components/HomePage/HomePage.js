@@ -4,7 +4,6 @@ import Image from "react-bootstrap/Image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as brandIcons from "@fortawesome/free-brands-svg-icons";
-import * as icons from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./HomePage.module.scss";
 
@@ -13,9 +12,19 @@ const HomePage = () => {
     <>
       <Container fluid className={styles.homeContanier}>
         <Row>
-          <Col md={7} className="text-right">
+          <Col sm={12} md={7} className="text-right">
             <div>
-              <h5 className={styles.title}>FULL STACK DEVELOPER</h5>
+              <h5 className={styles.title}>
+                <code>
+                  <span className={styles.angularBracket}>&lt;</span>
+                  <span className={styles.code}>code</span>
+                  <span className={styles.angularBracket}>&gt;</span>FULL STACK
+                  DEVELOPER<span className={styles.angularBracket}>&lt;</span>
+                  <span className={styles.angularBracket}>/</span>
+                  <span className={styles.code}>code</span>
+                  <span className={styles.angularBracket}>&gt;</span>
+                </code>
+              </h5>
               <h1 className={styles.myName}>Anantha Narayanan</h1>
               <div className={styles.descriptionContainer}>
                 <div className={styles.description}>

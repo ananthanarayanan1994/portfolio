@@ -9,7 +9,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <>
-      <footer className="fixed-bottom mt-4">
+      <footer className="fixed-bottom">
         <div className="d-flex justify-content-center">
           <a
             href="https://github.com/ananthanarayanan1994/"
