@@ -59,16 +59,16 @@ const HomePage = () => {
             />
           </Col>
         </Row>
-        <Row className="mt-4">
-          <Col md="4">
+        <Row className="mt-4 text-left">
+          <Col xs={4} sm={4} md="4">
             <div className={styles.heading}>Born in</div>
             <div className={styles.fontBold}>Chennai</div>
           </Col>
-          <Col md="4">
+          <Col xs={4} sm={4} md="4">
             <div className={styles.heading}>Experience</div>
             <div className={styles.fontBold}>6+ Years</div>
           </Col>
-          <Col md="4">
+          <Col xs={4} sm={4} md="4">
             <div className={styles.heading}>Date of Birth</div>
             <div className={styles.fontBold}>14 July 1994</div>
           </Col>
